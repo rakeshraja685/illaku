@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Ilakku Tech Skills Academy | Shape Your Future</title>
+  <meta name="description" content="Empowering the next generation of tech leaders across Chennai and Dindigul with immersive, hands-on learning experiences in modern technologies, design, and civil services."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link href="css/style.css" rel="stylesheet"/>
+  
+  <style>
+    /* Floating WhatsApp Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+      z-index: 999;
+      transition: var(--transition-normal);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="index.html">
+        <div class="logo-icon">இ</div>
+        <div class="logo-text">
+          <span class="logo-main">Ilakku</span>
+          <span class="logo-sub">Tech Skills Academy</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link active" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="courses.html">Courses</a></li>
+        <li><a class="nav-link" href="admissions.html">Admissions</a></li>
+      </ul>
+      <a class="btn-enroll" href="admissions.html">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link active" href="index.html">Home</a>
+    <a class="mobile-link" href="about.html">About</a>
+    <a class="mobile-link" href="courses.html">Courses</a>
+    <a class="mobile-link" href="admissions.html">Admissions</a>
+    <a class="btn-enroll" href="admissions.html" style="text-align: center; margin-top: 12px; display: block; width: 100%;">Enroll Now</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content" data-aos="fade-up">
+      <div class="hero-badge">
+        <span class="material-icons">workspace_premium</span>
+        <span>Premium Tech Skills Academy</span>
+      </div>
+      <h1 class="hero-title">Shaping Futures Through <em>Industry-Aligned</em> Education.</h1>
+      <p class="hero-subtitle">Empowering the next generation of tech leaders across Chennai and Dindigul with immersive, hands-on learning experiences in modern technologies, design, and civil services.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="courses.html">Explore Programs <span class="material-icons">arrow_forward</span></a>
+        <a class="btn-secondary" href="admissions.html">Talk to Admissions</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num counter" data-target="9">0</span>
+          <span class="stat-label">Years of Excellence</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num counter" data-target="3">0</span>
+          <span class="stat-label">Modern Campuses</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num counter" data-target="4.8">0.0</span>
+          <span class="stat-label">Student Rating</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-visual" data-aos="fade-up">
+      <div class="hero-card-stack">
+        <div class="hero-card hero-card-1">
+          <span class="material-icons">code</span>
+          <span>Technology</span>
+        </div>
+        <div class="hero-card hero-card-2">
+          <span class="material-icons">palette</span>
+          <span>UI/UX Design</span>
+        </div>
+        <div class="hero-card hero-card-3">
+          <span class="material-icons">checkroom</span>
+          <span>Fashion Tech</span>
+        </div>
+        <div class="hero-card hero-card-4">
+          <span class="material-icons">menu_book</span>
+          <span>Civil Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Marquee -->
+  <section class="marquee-wrapper">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Full-Stack Web Development</span>
+        <span class="sep">✦</span>
+        <span>UI/UX Product Design</span>
+        <span class="sep">✦</span>
+        <span>Fashion Technology</span>
+        <span class="sep">✦</span>
+        <span>TNPSC Civil Services Coaching</span>
+        <span class="sep">✦</span>
+        <span>Practical Learning</span>
+        <span class="sep">✦</span>
+        <span>Expert Mentors</span>
+        <span class="sep">✦</span>
+        <span>Bilingual Instruction</span>
+        <span class="sep">✦</span>
+        <!-- Duplicated for Infinite Loop -->
+        <span>Full-Stack Web Development</span>
+        <span class="sep">✦</span>
+        <span>UI/UX Product Design</span>
+        <span class="sep">✦</span>
+        <span>Fashion Technology</span>
+        <span class="sep">✦</span>
+        <span>TNPSC Civil Services Coaching</span>
+        <span class="sep">✦</span>
+        <span>Practical Learning</span>
+        <span class="sep">✦</span>
+        <span>Expert Mentors</span>
+        <span class="sep">✦</span>
+        <span>Bilingual Instruction</span>
+        <span class="sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Divisions Bento Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Academics</span>
+        <h2 class="section-title">Our <em>Pillar</em> Programs</h2>
+        <p class="section-desc">Discover our range of comprehensive, industry-aligned training programs built for your career success.</p>
+      </div>
+      
+      <div class="pillars-grid">
+        <!-- Technology -->
+        <div class="pillar-card" data-aos="fade-up">
+          <div class="pillar-icon indigo">
+            <span class="material-icons">code</span>
+          </div>
+          <h3>Technology & Development</h3>
+          <p>Full-stack development, mobile applications, and data science courses designed to make you a job-ready engineer.</p>
+          <a class="pillar-link" href="courses.html">View Courses <span class="material-icons">chevron_right</span></a>
+        </div>
+        
+        <!-- UI/UX -->
+        <div class="pillar-card" data-aos="fade-up">
+          <div class="pillar-icon teal">
+            <span class="material-icons">palette</span>
+          </div>
+          <h3>UI/UX Product Design</h3>
+          <p>Master user-centric design principles, research methodology, wireframing, and interactive prototyping using Figma.</p>
+          <a class="pillar-link" href="courses.html">View Courses <span class="material-icons">chevron_right</span></a>
+        </div>
+        
+        <!-- Fashion Tech -->
+        <div class="pillar-card" data-aos="fade-up">
+          <div class="pillar-icon saffron">
+            <span class="material-icons">checkroom</span>
+          </div>
+          <h3>Fashion Technology</h3>
+          <p>Apparel design, pattern making, textile science, and fashion merchandising bridging creativity with commerce.</p>
+          <a class="pillar-link" href="courses.html">View Courses <span class="material-icons">chevron_right</span></a>
+        </div>
+        
+        <!-- Civil Services -->
+        <div class="pillar-card" data-aos="fade-up">
+          <div class="pillar-icon amber">
+            <span class="material-icons">menu_book</span>
+          </div>
+          <h3>TNPSC Civil Services</h3>
+          <p>Comprehensive preparational courses and test series for TNPSC Group I, II, and IV exams with bilingual support.</p>
+          <a class="pillar-link" href="courses.html">View Courses <span class="material-icons">chevron_right</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="why-us-inner">
+        <div>
+          <span class="section-eyebrow">Our Advantage</span>
+          <h2 class="section-title">A Unique Blend of <em>Heritage</em> & Tech.</h2>
+          <p class="section-desc">At Ilakku Academy, we believe in holistic skill-building. We provide a supportive, psychologically safe learning ecosystem designed to maximize retention and outcomes.</p>
+        </div>
+        <div class="why-us-features">
+          <div class="feature-item" data-aos="fade-up">
+            <div class="feature-icon">
+              <span class="material-icons">groups</span>
+            </div>
+            <div>
+              <h4>Expert Mentors</h4>
+              <p>Learn directly from professionals with extensive experience in the field.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item" data-aos="fade-up">
+            <div class="feature-icon">
+              <span class="material-icons">desktop_mac</span>
+            </div>
+            <div>
+              <h4>Smart Classrooms</h4>
+              <p>State-of-the-art computer labs and high-speed internet connectivity.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item" data-aos="fade-up">
+            <div class="feature-icon">
+              <span class="material-icons">translate</span>
+            </div>
+            <div>
+              <h4>Bilingual Learning</h4>
+              <p>Courses taught in English and Tamil for complete conceptual clarity.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item" data-aos="fade-up">
+            <div class="feature-icon">
+              <span class="material-icons">workspace_premium</span>
+            </div>
+            <div>
+              <h4>Placement Support</h4>
+              <p>Dedicated placement assistance and portfolio building support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campuses Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Campuses</span>
+        <h2 class="section-title">Our <em>Learning</em> Hubs</h2>
+        <p class="section-desc">Visit any of our campuses to experience our cutting-edge labs and consult with academic advisors.</p>
+      </div>
+      
+      <div class="campus-grid">
+        <!-- Chennai Campus -->
+        <div class="campus-card featured-campus" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Chennai Main Campus</h3>
+          <p class="campus-address">123, Nelson Manickam Road, Aminjikarai, Chennai - 600029</p>
+          <div class="campus-tags">
+            <span class="tag indigo-tag">Tech Programs</span>
+            <span class="tag teal-tag">Design Hub</span>
+          </div>
+          <a class="campus-link" href="admissions.html#campuses">Get Directions <span class="material-icons">arrow_forward</span></a>
+        </div>
+        
+        <!-- Gowrivakkam Campus -->
+        <div class="campus-card" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Chennai Gowrivakkam</h3>
+          <p class="campus-address">45, Velachery Tambaram Main Rd, Gowrivakkam, Chennai - 600073</p>
+          <div class="campus-tags">
+            <span class="tag indigo-tag">Tech Programs</span>
+            <span class="tag amber-tag">Commerce</span>
+          </div>
+          <a class="campus-link" href="admissions.html#campuses">Get Directions <span class="material-icons">arrow_forward</span></a>
+        </div>
+        
+        <!-- Dindigul Campus -->
+        <div class="campus-card" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Dindigul Campus</h3>
+          <p class="campus-address">78, Palani Road, Near Bus Stand, Dindigul - 624001</p>
+          <div class="campus-tags">
+            <span class="tag saffron-tag" style="background-color: #fbe9e7; color: var(--secondary-saffron-dark);">Civil Services</span>
+            <span class="tag indigo-tag">Tech Programs</span>
+          </div>
+          <a class="campus-link" href="admissions.html#campuses">Get Directions <span class="material-icons">arrow_forward</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-banner">
+    <div class="cta-bg">
+      <div class="blob blob-cta-1"></div>
+      <div class="blob blob-cta-2"></div>
+    </div>
+    <div class="container" style="display: flex; justify-content: center; width: 100%;">
+      <div class="cta-inner" data-aos="fade-up">
+        <h2>Transform Your Career Path Today</h2>
+        <p>Enrollments are now open for our upcoming batches. Join our academy and learn the skills that matter.</p>
+        <div class="cta-buttons">
+          <a class="btn-primary-light" href="admissions.html">Enroll Now <span class="material-icons">arrow_forward</span></a>
+          <a class="btn-ghost-light" href="courses.html">View Curriculum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" style="color: #ffffff;">
+            <div class="logo-icon" style="background-color: var(--secondary-saffron); color: var(--text-charcoal);">இ</div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #ffffff;">Ilakku</span>
+              <span class="logo-sub" style="color: rgba(255,255,255,0.7);">Tech Skills Academy</span>
+            </div>
+          </a>
+          <p>Shaping futures through industry-aligned, bilingual education that bridges traditional concepts with modern technology.</p>
+          <div class="social-links">
+            <a class="social-btn" href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+            <a class="social-btn" href="#" aria-label="Instagram"><span class="material-icons">photo_camera</span></a>
+            <a class="social-btn" href="#" aria-label="YouTube"><span class="material-icons">play_circle</span></a>
+            <a class="social-btn" href="#" aria-label="LinkedIn"><span class="material-icons">work</span></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Programs</h4>
+          <a href="courses.html">Technology & Dev</a>
+          <a href="courses.html">UI/UX Design</a>
+          <a href="courses.html">Fashion Tech</a>
+          <a href="courses.html">Civil Services</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Academy</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#faculty">Faculty & Mentors</a>
+          <a href="about.html#testimonials">Testimonials</a>
+          <a href="admissions.html#campuses">Campus Locations</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <a href="admissions.html">Admissions</a>
+          <a href="admissions.html#contact">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>© 2024 Ilakku Tech Skills Academy. All Rights Reserved.</span>
+        <span class="footer-tamil">இளகு தொழில்நுட்ப திறன் கல்விமனை</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 6.172c-3.203 0-5.807 2.604-5.807 5.807 0 1.277.414 2.453 1.114 3.414l-.73 2.661 2.723-.715a5.772 5.772 0 002.7 1.08h.001c3.203 0 5.807-2.604 5.807-5.807 0-3.203-2.604-5.807-5.807-5.807zm3.11 7.922c-.172.484-.87.892-1.22.95-.312.052-.716.096-1.127-.036-.254-.082-.572-.2-.976-.375-1.722-.746-2.85-2.493-2.936-2.607-.085-.114-.693-.923-.693-1.76 0-.837.427-1.25.58-.142.152-.108.254-.15.339-.1.085-.05.17-.1.255-.05.085-.102.17-.152.255-.17.426-.92 1.488-.95 1.547-.113.114-.227.126-.398.042-.17-.085-.722-.266-1.376-.849-.508-.452-.851-1.01-.951-1.18-.1-.17-.01-.262.076-.347.077-.076.17-.2.256-.298.085-.098.113-.17.17-.284.056-.114.028-.213-.014-.298-.043-.085-.386-.928-.529-1.273-.14-.336-.282-.29-.387-.294-.1-.002-.213-.002-.328-.002a.63.63 0 00-.457.213c-.157.17-.6.586-.6 1.43 0 .843.614 1.657.7 1.771.086.114 1.206 1.844 2.923 2.586.408.176.727.28.976.36.41.13.784.11 1.077.068.328-.047 1.013-.414 1.155-.812z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Counter animations on home page
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    counters.forEach(counter => {
+      const animate = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+
+        if (count < target) {
+          if(target % 1 !== 0) {
+            counter.innerText = (count + inc).toFixed(1);
+          } else {
+            counter.innerText = Math.ceil(count + inc);
+          }
+          setTimeout(animate, 20);
+        } else {
+          counter.innerText = target + (target > 10 ? '+' : '');
+        }
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        if(entries[0].isIntersecting) {
+          animate();
+          observer.disconnect();
+        }
+      });
+      observer.observe(counter);
+    });
+  </script>
+</body>
+</html>

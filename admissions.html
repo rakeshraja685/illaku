@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Admissions & Contact | Ilakku Tech Skills Academy</title>
+  <meta name="description" content="Get in touch with Ilakku Academy's academic counselors, learn about our simple 4-step enrollment process, explore campuses, and get answers to FAQs."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link href="css/style.css" rel="stylesheet"/>
+  
+  <style>
+    /* Floating WhatsApp Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+      z-index: 999;
+      transition: var(--transition-normal);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="index.html">
+        <div class="logo-icon">இ</div>
+        <div class="logo-text">
+          <span class="logo-main">Ilakku</span>
+          <span class="logo-sub">Tech Skills Academy</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="courses.html">Courses</a></li>
+        <li><a class="nav-link active" href="admissions.html">Admissions</a></li>
+      </ul>
+      <a class="btn-enroll" href="admissions.html">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" href="index.html">Home</a>
+    <a class="mobile-link" href="about.html">About</a>
+    <a class="mobile-link" href="courses.html">Courses</a>
+    <a class="mobile-link active" href="admissions.html">Admissions</a>
+    <a class="btn-enroll" href="admissions.html" style="text-align: center; margin-top: 12px; display: block; width: 100%;">Enroll Now</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="page-hero-content" data-aos="fade-up">
+      <h1 class="page-hero-title">Begin Your Journey to <em>Excellence</em></h1>
+      <p class="page-hero-desc">Connect with our admissions team to find the program that aligns with your goals. Our advisors are ready to guide you step-by-step.</p>
+    </div>
+  </section>
+
+  <!-- Process Steps Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">How It Works</span>
+        <h2 class="section-title">Our Simple <em>4-Step</em> Admission Process</h2>
+      </div>
+      
+      <div class="process-steps" data-aos="fade-up">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <span class="material-icons">mail_outline</span>
+          </div>
+          <h4>Submit Inquiry</h4>
+          <p>Fill out our short online form with your background and interests.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <span class="material-icons">phone_in_talk</span>
+          </div>
+          <h4>Advisory Call</h4>
+          <p>Our academic counselor calls you to discuss goals and course fit.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <span class="material-icons">schedule</span>
+          </div>
+          <h4>Choose Batch</h4>
+          <p>Select your campus and choose a weekday or weekend batch schedule.</p>
+        </div>
+        
+        <div class="process-arrow">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <span class="material-icons">check_circle_outline</span>
+          </div>
+          <h4>Begin Classes</h4>
+          <p>Complete enrollment and unlock your path to career upskilling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Form & Contact Info -->
+  <section class="section why-us" id="contact">
+    <div class="container">
+      <div class="form-contact-grid">
+        
+        <!-- Form Column -->
+        <div class="form-card glass-card" data-aos="fade-up">
+          <h2 class="form-title">Academic Inquiry</h2>
+          <p class="form-subtitle">Fill in the details below and we will contact you within 24 hours.</p>
+          
+          <form id="inquiryForm" onsubmit="event.preventDefault(); showSuccess();">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required/>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phone" placeholder="Enter mobile number" required/>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="name@example.com"/>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="campus">Preferred Campus <span class="req">*</span></label>
+                <div class="select-wrapper">
+                  <select id="campus" required>
+                    <option value="" disabled selected>Select Campus</option>
+                    <option value="chennai">Chennai (Aminjikarai)</option>
+                    <option value="gowrivakkam">Chennai (Gowrivakkam)</option>
+                    <option value="dindigul">Dindigul Campus</option>
+                  </select>
+                  <span class="material-icons select-arrow">arrow_drop_down</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="course">Program of Interest <span class="req">*</span></label>
+                <div class="select-wrapper">
+                  <select id="course" required>
+                    <option value="" disabled selected>Select Program</option>
+                    <option value="webdev">Full-Stack Web Dev</option>
+                    <option value="uiux">UI/UX Product Design</option>
+                    <option value="civil">TNPSC Civil Services</option>
+                    <option value="not_sure">Help me choose</option>
+                  </select>
+                  <span class="material-icons select-arrow">arrow_drop_down</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message / Questions</label>
+              <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary submit-btn">Send Message <span class="material-icons">send</span></button>
+          </form>
+          
+          <div id="successMessage" class="form-success hidden">
+            <span class="material-icons">check_circle</span>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. An academic counselor will contact you shortly.</p>
+            <button onclick="resetForm()" class="btn-secondary" style="margin-top: 16px;">Send Another Message</button>
+          </div>
+        </div>
+        
+        <!-- Contact Info Column -->
+        <div class="contact-info" data-aos="fade-up">
+          <h2>Direct Contact</h2>
+          <p>Have immediate queries? Contact our helpline directly or walk into our corporate office.</p>
+          
+          <div class="contact-items">
+            <!-- Item 1 -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <span class="material-icons">phone</span>
+              </div>
+              <div>
+                <h5>Call Us</h5>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="tel:+919876543211">+91 98765 43211</a>
+              </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <span class="material-icons">email</span>
+              </div>
+              <div>
+                <h5>Email Admissions</h5>
+                <a href="mailto:admissions@ilakku.in">admissions@ilakku.in</a>
+                <a href="mailto:info@ilakku.in">info@ilakku.in</a>
+              </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <span class="material-icons">schedule</span>
+              </div>
+              <div>
+                <h5>Working Hours</h5>
+                <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass-card" style="padding: 24px; border-radius: var(--radius-md);">
+            <h4 style="font-family: var(--font-subheading); font-size: 16px; margin-bottom: 8px;">WhatsApp Helpline</h4>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 12px;">Get instant updates and counselor connectivity over chat.</p>
+            <a class="whatsapp-link" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+              <span class="material-icons" style="vertical-align: middle; font-size: 18px; margin-right: 4px;">chat</span> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Campuses Section -->
+  <section class="section" id="campuses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Locations</span>
+        <h2 class="section-title">Visit Our <em>Campuses</em></h2>
+        <p class="section-desc">Experience our modern coding labs and talk face-to-face with our mentors.</p>
+      </div>
+      
+      <div class="campus-grid">
+        <!-- Chennai Main -->
+        <div class="campus-card featured-campus" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Chennai Main Campus</h3>
+          <p class="campus-address">123, Nelson Manickam Road, Aminjikarai, Chennai - 600029</p>
+          <div class="campus-tags">
+            <span class="tag indigo-tag">Tech Programs</span>
+            <span class="tag teal-tag">Design Hub</span>
+          </div>
+          <a class="campus-link" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Open in Maps <span class="material-icons">open_in_new</span></a>
+        </div>
+        
+        <!-- Gowrivakkam -->
+        <div class="campus-card" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Chennai Gowrivakkam</h3>
+          <p class="campus-address">45, Velachery Tambaram Main Rd, Gowrivakkam, Chennai - 600073</p>
+          <div class="campus-tags">
+            <span class="tag indigo-tag">Tech Programs</span>
+            <span class="tag amber-tag">Commerce</span>
+          </div>
+          <a class="campus-link" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Open in Maps <span class="material-icons">open_in_new</span></a>
+        </div>
+        
+        <!-- Dindigul -->
+        <div class="campus-card" data-aos="fade-up">
+          <div class="campus-map-icon">
+            <span class="material-icons">place</span>
+          </div>
+          <h3>Dindigul Campus</h3>
+          <p class="campus-address">78, Palani Road, Near Bus Stand, Dindigul - 624001</p>
+          <div class="campus-tags">
+            <span class="tag saffron-tag" style="background-color: #fbe9e7; color: var(--secondary-saffron-dark);">Civil Services</span>
+            <span class="tag indigo-tag">Tech Programs</span>
+          </div>
+          <a class="campus-link" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Open in Maps <span class="material-icons">open_in_new</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">FAQs</span>
+        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+      </div>
+      
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item" data-aos="fade-up">
+          <button class="faq-question">
+            <span>What are the eligibility criteria for joining a course?</span>
+            <span class="material-icons faq-arrow">expand_more</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our courses are designed for beginners as well as working professionals. Basic computer literacy is helpful, but we start teaching all tech and design concepts completely from scratch. No prior coding background is required.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 2 -->
+        <div class="faq-item" data-aos="fade-up">
+          <button class="faq-question">
+            <span>Is there dedicated placement support?</span>
+            <span class="material-icons faq-arrow">expand_more</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We have a dedicated placement cell that works with our students on portfolio reviews, resume building, mock interviews, and provides direct interview opportunities with hiring partners in Chennai and Bangalore.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 3 -->
+        <div class="faq-item" data-aos="fade-up">
+          <button class="faq-question">
+            <span>Can I pay my course fees in monthly installments?</span>
+            <span class="material-icons faq-arrow">expand_more</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. We offer flexible, zero-cost EMI installment options for all our long-term courses, allowing students to pay in comfortable monthly installments during the course duration.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ 4 -->
+        <div class="faq-item" data-aos="fade-up">
+          <button class="faq-question">
+            <span>Are class instructions and materials available in Tamil?</span>
+            <span class="material-icons faq-arrow">expand_more</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We follow a unique bilingual learning methodology (English and Tamil mixed) in class discussions to ensure complete conceptual clarity, while student materials and projects are aligned with global industry English standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" style="color: #ffffff;">
+            <div class="logo-icon" style="background-color: var(--secondary-saffron); color: var(--text-charcoal);">இ</div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #ffffff;">Ilakku</span>
+              <span class="logo-sub" style="color: rgba(255,255,255,0.7);">Tech Skills Academy</span>
+            </div>
+          </a>
+          <p>Shaping futures through industry-aligned, bilingual education that bridges traditional concepts with modern technology.</p>
+          <div class="social-links">
+            <a class="social-btn" href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+            <a class="social-btn" href="#" aria-label="Instagram"><span class="material-icons">photo_camera</span></a>
+            <a class="social-btn" href="#" aria-label="YouTube"><span class="material-icons">play_circle</span></a>
+            <a class="social-btn" href="#" aria-label="LinkedIn"><span class="material-icons">work</span></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Programs</h4>
+          <a href="courses.html">Technology & Dev</a>
+          <a href="courses.html">UI/UX Design</a>
+          <a href="courses.html">Fashion Tech</a>
+          <a href="courses.html">Civil Services</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Academy</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#faculty">Faculty & Mentors</a>
+          <a href="about.html#testimonials">Testimonials</a>
+          <a href="admissions.html#campuses">Campus Locations</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <a href="admissions.html">Admissions</a>
+          <a href="admissions.html#contact">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>© 2024 Ilakku Tech Skills Academy. All Rights Reserved.</span>
+        <span class="footer-tamil">இளகு தொழில்நுட்ப திறன் கல்விமனை</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 6.172c-3.203 0-5.807 2.604-5.807 5.807 0 1.277.414 2.453 1.114 3.414l-.73 2.661 2.723-.715a5.772 5.772 0 002.7 1.08h.001c3.203 0 5.807-2.604 5.807-5.807 0-3.203-2.604-5.807-5.807-5.807zm3.11 7.922c-.172.484-.87.892-1.22.95-.312.052-.716.096-1.127-.036-.254-.082-.572-.2-.976-.375-1.722-.746-2.85-2.493-2.936-2.607-.085-.114-.693-.923-.693-1.76 0-.837.427-1.25.58-.142.152-.108.254-.15.339-.1.085-.05.17-.1.255-.05.085-.102.17-.152.255-.17.426-.92 1.488-.95 1.547-.113.114-.227.126-.398.042-.17-.085-.722-.266-1.376-.849-.508-.452-.851-1.01-.951-1.18-.1-.17-.01-.262.076-.347.077-.076.17-.2.256-.298.085-.098.113-.17.17-.284.056-.114.028-.213-.014-.298-.043-.085-.386-.928-.529-1.273-.14-.336-.282-.29-.387-.294-.1-.002-.213-.002-.328-.002a.63.63 0 00-.457.213c-.157.17-.6.586-.6 1.43 0 .843.614 1.657.7 1.771.086.114 1.206 1.844 2.923 2.586.408.176.727.28.976.36.41.13.784.11 1.077.068.328-.047 1.013-.414 1.155-.812z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // FAQ Accordion Toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          
+          // Close all FAQ items
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          
+          // If the clicked one wasn't open, open it
+          if (!isOpen) {
+            item.classList.add('open');
+          }
+        });
+      });
+    });
+
+    // Form success mock submission handler
+    function showSuccess() {
+      document.getElementById('inquiryForm').classList.add('hidden');
+      document.getElementById('successMessage').classList.remove('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('inquiryForm').reset();
+      document.getElementById('inquiryForm').classList.remove('hidden');
+      document.getElementById('successMessage').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Courses & Programs | Ilakku Tech Skills Academy</title>
+  <meta name="description" content="Explore our industry-aligned, bilingual courses in technology, UI/UX product design, fashion tech, and TNPSC civil services coaching."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link href="css/style.css" rel="stylesheet"/>
+  
+  <style>
+    /* Floating WhatsApp Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+      z-index: 999;
+      transition: var(--transition-normal);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="index.html">
+        <div class="logo-icon">இ</div>
+        <div class="logo-text">
+          <span class="logo-main">Ilakku</span>
+          <span class="logo-sub">Tech Skills Academy</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link active" href="courses.html">Courses</a></li>
+        <li><a class="nav-link" href="admissions.html">Admissions</a></li>
+      </ul>
+      <a class="btn-enroll" href="admissions.html">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" href="index.html">Home</a>
+    <a class="mobile-link" href="about.html">About</a>
+    <a class="mobile-link active" href="courses.html">Courses</a>
+    <a class="mobile-link" href="admissions.html">Admissions</a>
+    <a class="btn-enroll" href="admissions.html" style="text-align: center; margin-top: 12px; display: block; width: 100%;">Enroll Now</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="page-hero-content" data-aos="fade-up">
+      <h1 class="page-hero-title">Our Academic <em>Programs</em></h1>
+      <p class="page-hero-desc">Master modern skills with our industry-aligned curriculum. We blend traditional academic rigor with future-ready technology to prepare you for the global stage.</p>
+    </div>
+  </section>
+
+  <!-- Sticky Filter Bar Section -->
+  <section class="section" style="padding-top: 24px; padding-bottom: 24px;">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All Programs</button>
+        <button class="filter-tab" data-category="tech">Technology</button>
+        <button class="filter-tab" data-category="design">Design</button>
+        <button class="filter-tab" data-category="civil">Civil Services</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Catalog Grid -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="courses-grid">
+        
+        <!-- Course Card 1: Tech -->
+        <div class="course-card" data-category="tech" data-aos="fade-up">
+          <div class="course-card-header" style="background-color: var(--primary-indigo);">
+            <span class="material-icons course-icon">terminal</span>
+            <span class="course-tag" style="background-color: rgba(255,255,255,0.2); color: #ffffff;">Technology</span>
+          </div>
+          <div class="course-card-body">
+            <h3>Full-Stack Web Development</h3>
+            <p>Comprehensive engineering program covering frontend UI, backend architecture, databases, and cloud deployment pipelines.</p>
+            <div class="course-meta">
+              <span><span class="material-icons">schedule</span> 6 Months</span>
+              <span><span class="material-icons">payments</span> ₹45,000</span>
+              <span><span class="material-icons">translate</span> Bilingual (English/Tamil)</span>
+            </div>
+            <div class="course-curriculum">
+              <h5>What You Will Learn</h5>
+              <ul>
+                <li>HTML5, CSS3, ES6 JavaScript</li>
+                <li>React.js Framework & State Management</li>
+                <li>Node.js, Express & REST APIs</li>
+                <li>MongoDB, SQL, and Cloud Deployment</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; padding-top: 24px; display: flex; justify-content: flex-end;">
+              <a class="btn-enroll" href="admissions.html" style="font-size: 14px; padding: 10px 24px;">Request Callback</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 2: Design -->
+        <div class="course-card" data-category="design" data-aos="fade-up">
+          <div class="course-card-header" style="background-color: var(--highlight-teal);">
+            <span class="material-icons course-icon">palette</span>
+            <span class="course-tag" style="background-color: rgba(255,255,255,0.2); color: #ffffff;">Design</span>
+          </div>
+          <div class="course-card-body">
+            <h3>UI/UX Product Design</h3>
+            <p>Master user-centric design principles, responsive UI wireframing, high-fidelity interactive prototyping, and design systems.</p>
+            <div class="course-meta">
+              <span><span class="material-icons">schedule</span> 4 Months</span>
+              <span><span class="material-icons">payments</span> ₹35,000</span>
+              <span><span class="material-icons">translate</span> Bilingual (English/Tamil)</span>
+            </div>
+            <div class="course-curriculum">
+              <h5>What You Will Learn</h5>
+              <ul>
+                <li>User Research & Persona Building</li>
+                <li>Figma Interface Design & Auto-Layout</li>
+                <li>Information Architecture & Wireframes</li>
+                <li>Interactive Prototyping & Usability Testing</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; padding-top: 24px; display: flex; justify-content: flex-end;">
+              <a class="btn-enroll" href="admissions.html" style="font-size: 14px; padding: 10px 24px;">Request Callback</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Card 3: Civil Services -->
+        <div class="course-card" data-category="civil" data-aos="fade-up">
+          <div class="course-card-header" style="background-color: var(--secondary-saffron-dark);">
+            <span class="material-icons course-icon">menu_book</span>
+            <span class="course-tag" style="background-color: rgba(255,255,255,0.2); color: #ffffff;">Civil Services</span>
+          </div>
+          <div class="course-card-body">
+            <h3>TNPSC Group I & II Coaching</h3>
+            <p>Intensive preparational academy for Tamil Nadu Public Service Commission exams, with focused material and test series.</p>
+            <div class="course-meta">
+              <span><span class="material-icons">schedule</span> 12 Months</span>
+              <span><span class="material-icons">payments</span> ₹60,000</span>
+              <span><span class="material-icons">translate</span> Bilingual (English/Tamil)</span>
+            </div>
+            <div class="course-curriculum">
+              <h5>What You Will Learn</h5>
+              <ul>
+                <li>General Studies & Tamil Nadu History</li>
+                <li>Aptitude & Mental Ability Coaching</li>
+                <li>Current Affairs & Policy Analysis</li>
+                <li>Regular Prelims & Mains Test Series</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; padding-top: 24px; display: flex; justify-content: flex-end;">
+              <a class="btn-enroll" href="admissions.html" style="font-size: 14px; padding: 10px 24px;">Request Callback</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Batches Schedule Table -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Schedule</span>
+        <h2 class="section-title">Upcoming <em>Batch</em> Timings</h2>
+        <p class="section-desc">Choose a schedule that fits your routine. We offer weekday evening and weekend classroom sessions.</p>
+      </div>
+      
+      <div class="batches-table-wrapper" data-aos="fade-up">
+        <table class="batches-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Campus</th>
+              <th>Timing</th>
+              <th>Starts</th>
+              <th>Seats Left</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Full-Stack Web Development</strong></td>
+              <td>Chennai Main (Aminjikarai)</td>
+              <td>Weekend Batch (Sat & Sun, 10am-2pm)</td>
+              <td>June 15, 2024</td>
+              <td><span class="seats-badge urgent">4 Seats left</span></td>
+              <td><a class="btn-small" href="admissions.html">Inquire</a></td>
+            </tr>
+            <tr>
+              <td><strong>UI/UX Product Design</strong></td>
+              <td>Gowrivakkam Hub</td>
+              <td>Weekday Evening (Mon-Thu, 6:30pm-8:30pm)</td>
+              <td>June 18, 2024</td>
+              <td><span class="seats-badge">8 Seats left</span></td>
+              <td><a class="btn-small" href="admissions.html">Inquire</a></td>
+            </tr>
+            <tr>
+              <td><strong>TNPSC Group I & II Coaching</strong></td>
+              <td>Dindigul Campus</td>
+              <td>Morning Batch (Daily, 9am-12pm)</td>
+              <td>July 01, 2024</td>
+              <td><span class="seats-badge">15 Seats left</span></td>
+              <td><a class="btn-small" href="admissions.html">Inquire</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" style="color: #ffffff;">
+            <div class="logo-icon" style="background-color: var(--secondary-saffron); color: var(--text-charcoal);">இ</div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #ffffff;">Ilakku</span>
+              <span class="logo-sub" style="color: rgba(255,255,255,0.7);">Tech Skills Academy</span>
+            </div>
+          </a>
+          <p>Shaping futures through industry-aligned, bilingual education that bridges traditional concepts with modern technology.</p>
+          <div class="social-links">
+            <a class="social-btn" href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+            <a class="social-btn" href="#" aria-label="Instagram"><span class="material-icons">photo_camera</span></a>
+            <a class="social-btn" href="#" aria-label="YouTube"><span class="material-icons">play_circle</span></a>
+            <a class="social-btn" href="#" aria-label="LinkedIn"><span class="material-icons">work</span></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Programs</h4>
+          <a href="courses.html">Technology & Dev</a>
+          <a href="courses.html">UI/UX Design</a>
+          <a href="courses.html">Fashion Tech</a>
+          <a href="courses.html">Civil Services</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Academy</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#faculty">Faculty & Mentors</a>
+          <a href="about.html#testimonials">Testimonials</a>
+          <a href="admissions.html#campuses">Campus Locations</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <a href="admissions.html">Admissions</a>
+          <a href="admissions.html#contact">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>© 2024 Ilakku Tech Skills Academy. All Rights Reserved.</span>
+        <span class="footer-tamil">இளகு தொழில்நுட்ப திறன் கல்விமனை</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 6.172c-3.203 0-5.807 2.604-5.807 5.807 0 1.277.414 2.453 1.114 3.414l-.73 2.661 2.723-.715a5.772 5.772 0 002.7 1.08h.001c3.203 0 5.807-2.604 5.807-5.807 0-3.203-2.604-5.807-5.807-5.807zm3.11 7.922c-.172.484-.87.892-1.22.95-.312.052-.716.096-1.127-.036-.254-.082-.572-.2-.976-.375-1.722-.746-2.85-2.493-2.936-2.607-.085-.114-.693-.923-.693-1.76 0-.837.427-1.25.58-.142.152-.108.254-.15.339-.1.085-.05.17-.1.255-.05.085-.102.17-.152.255-.17.426-.92 1.488-.95 1.547-.113.114-.227.126-.398.042-.17-.085-.722-.266-1.376-.849-.508-.452-.851-1.01-.951-1.18-.1-.17-.01-.262.076-.347.077-.076.17-.2.256-.298.085-.098.113-.17.17-.284.056-.114.028-.213-.014-.298-.043-.085-.386-.928-.529-1.273-.14-.336-.282-.29-.387-.294-.1-.002-.213-.002-.328-.002a.63.63 0 00-.457.213c-.157.17-.6.586-.6 1.43 0 .843.614 1.657.7 1.771.086.114 1.206 1.844 2.923 2.586.408.176.727.28.976.36.41.13.784.11 1.077.068.328-.047 1.013-.414 1.155-.812z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Tab Filter Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.filter-tab');
+      const cards = document.querySelectorAll('.course-card');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          
+          const category = tab.getAttribute('data-category');
+          
+          cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>About Us | Ilakku Tech Skills Academy</title>
+  <meta name="description" content="Learn about our story, vision, core pillars, milestones, and the expert mentors shaping the future of technical and design talent in Tamil Nadu."/>
+  
+  <!-- Preconnect & Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;family=Noto+Sans+Tamil:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link href="css/style.css" rel="stylesheet"/>
+  
+  <style>
+    /* Floating WhatsApp Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+      z-index: 999;
+      transition: var(--transition-normal);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="logo" href="index.html">
+        <div class="logo-icon">இ</div>
+        <div class="logo-text">
+          <span class="logo-main">Ilakku</span>
+          <span class="logo-sub">Tech Skills Academy</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link active" href="about.html">About</a></li>
+        <li><a class="nav-link" href="courses.html">Courses</a></li>
+        <li><a class="nav-link" href="admissions.html">Admissions</a></li>
+      </ul>
+      <a class="btn-enroll" href="admissions.html">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" href="index.html">Home</a>
+    <a class="mobile-link active" href="about.html">About</a>
+    <a class="mobile-link" href="courses.html">Courses</a>
+    <a class="mobile-link" href="admissions.html">Admissions</a>
+    <a class="btn-enroll" href="admissions.html" style="text-align: center; margin-top: 12px; display: block; width: 100%;">Enroll Now</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="page-hero-content" data-aos="fade-up">
+      <h1 class="page-hero-title">Forging the Future of <em>Tech Leadership</em></h1>
+      <p class="page-hero-desc">Founded in 2017 with a vision to bridge the chasm between traditional academic theory and the fast-paced reality of modern industry demands. We build professionals, not just graduates.</p>
+    </div>
+  </section>
+
+  <!-- Mission / Core Pillars Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Mission</span>
+        <h2 class="section-title">Cultivating a Secure, <em>Inclusive</em> Space for Practical Learning</h2>
+        <p class="section-desc">The foundation upon which we build every curriculum and community interaction.</p>
+      </div>
+      
+      <div class="mission-grid">
+        <!-- Pillar 1 -->
+        <div class="mission-card featured-mission" data-aos="fade-up">
+          <div class="mission-icon">
+            <span class="material-icons">code_blocks</span>
+          </div>
+          <h3>Practical Learning</h3>
+          <p>We prioritize hands-on project experience over rote memorization, ensuring our graduates are deployable from day one.</p>
+        </div>
+        
+        <!-- Pillar 2 -->
+        <div class="mission-card" data-aos="fade-up">
+          <div class="mission-icon amber-icon">
+            <span class="material-icons">health_and_safety</span>
+          </div>
+          <h3>Safe Environment</h3>
+          <p>A psychologically safe space where questioning is encouraged, failure is analyzed constructively, and mental well-being is paramount.</p>
+        </div>
+        
+        <!-- Pillar 3 -->
+        <div class="mission-card" data-aos="fade-up">
+          <div class="mission-icon">
+            <span class="material-icons">diversity_3</span>
+          </div>
+          <h3>Inclusive Access</h3>
+          <p>Breaking down socio-economic and linguistic barriers to ensure top-tier tech education is accessible to all driven individuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">History</span>
+        <h2 class="section-title">Our <em>Milestone</em> Journey</h2>
+      </div>
+      
+      <div class="timeline">
+        <!-- Year 2017 -->
+        <div class="timeline-item timeline-left" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2017</div>
+            <h4>The Foundation</h4>
+            <p>Ilakku Academy opens its first campus in Aminjikarai with a core team of 5 industry veterans, focusing on web technologies.</p>
+          </div>
+        </div>
+        
+        <!-- Year 2019 -->
+        <div class="timeline-item timeline-right" data-aos="fade-up">
+          <div class="timeline-dot amber-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2019</div>
+            <h4>Branch Expansion</h4>
+            <p>Expanded to two new locations, introducing advanced curriculum in Cloud Computing and Data Science, doubling our student capacity.</p>
+          </div>
+        </div>
+        
+        <!-- Year Present -->
+        <div class="timeline-item timeline-left" data-aos="fade-up">
+          <div class="timeline-dot teal-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Present</div>
+            <h4>Digital & Global Hub</h4>
+            <p>Launching hybrid learning models and partnering with global firms to ensure our alumni are placed in top-tier roles worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / Mentors Section -->
+  <section class="section" id="faculty">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Mentorship</span>
+        <h2 class="section-title">Leadership & <em>Expert</em> Mentors</h2>
+        <p class="section-desc">Learn directly from professionals who bring real-world architectural challenges into the classroom.</p>
+      </div>
+      
+      <div class="faculty-grid">
+        <!-- Faculty 1 -->
+        <div class="faculty-card" data-aos="fade-up">
+          <div class="faculty-avatar" style="background-color: var(--primary-indigo);">N</div>
+          <h4>Narayanan K.</h4>
+          <div class="faculty-role">Lead Mentor, Cloud Architecture</div>
+          <p class="faculty-bio">With over 15 years of industry experience across AWS and Azure, Narayanan bridges the gap between theoretical cloud concepts and enterprise-grade deployment.</p>
+          <div class="faculty-tags">
+            <span class="tag indigo-tag">Cloud</span>
+            <span class="tag teal-tag">DevOps</span>
+          </div>
+        </div>
+        
+        <!-- Faculty 2 -->
+        <div class="faculty-card" data-aos="fade-up">
+          <div class="faculty-avatar" style="background-color: var(--secondary-saffron-dark);">P</div>
+          <h4>Priya S.</h4>
+          <div class="faculty-role">Head of Data Science</div>
+          <p class="faculty-bio">Former Lead Data Scientist at a Fortune 500 company, Priya specializes in making complex machine learning algorithms accessible to beginners.</p>
+          <div class="faculty-tags">
+            <span class="tag teal-tag">Data Science</span>
+            <span class="tag amber-tag">AI</span>
+          </div>
+        </div>
+        
+        <!-- Faculty 3 -->
+        <div class="faculty-card" data-aos="fade-up">
+          <div class="faculty-avatar" style="background-color: var(--highlight-teal);">K</div>
+          <h4>Karthik Raja</h4>
+          <div class="faculty-role">Lead Tech Mentor</div>
+          <p class="faculty-bio">Full-stack engineering expert and former senior developer with 8+ years of coaching experience in frontend & backend frameworks.</p>
+          <div class="faculty-tags">
+            <span class="tag indigo-tag">Full-Stack</span>
+            <span class="tag saffron-tag" style="background-color: #fbe9e7; color: var(--secondary-saffron-dark);">React</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section why-us" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reviews</span>
+        <h2 class="section-title">What Our <em>Students</em> Say</h2>
+        <p class="section-desc">Real stories from students who transformed their careers at Ilakku Academy.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" style="background-color: var(--glass-bg); border: 1px solid var(--glass-border);" data-aos="fade-up">
+          <div class="stars">★★★★★</div>
+          <p>"The bilingual teaching style helped me understand complex programming concepts easily. The mentors are patient and extremely knowledgeable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background-color: var(--primary-indigo); color: #ffffff;">M</div>
+            <div class="author-info">
+              <strong>Meera K.</strong>
+              <span>Full-Stack Web Graduate</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" style="background-color: var(--glass-bg); border: 1px solid var(--glass-border);" data-aos="fade-up">
+          <div class="stars">★★★★★</div>
+          <p>"Ilakku changed my career trajectory. The UI/UX Product Design course structure is very practical. I got placed as a designer in Chennai!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background-color: var(--secondary-saffron); color: var(--text-charcoal);">S</div>
+            <div class="author-info">
+              <strong>Suresh Kumar</strong>
+              <span>UI/UX Design Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" style="color: #ffffff;">
+            <div class="logo-icon" style="background-color: var(--secondary-saffron); color: var(--text-charcoal);">இ</div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #ffffff;">Ilakku</span>
+              <span class="logo-sub" style="color: rgba(255,255,255,0.7);">Tech Skills Academy</span>
+            </div>
+          </a>
+          <p>Shaping futures through industry-aligned, bilingual education that bridges traditional concepts with modern technology.</p>
+          <div class="social-links">
+            <a class="social-btn" href="#" aria-label="Facebook"><span class="material-icons">facebook</span></a>
+            <a class="social-btn" href="#" aria-label="Instagram"><span class="material-icons">photo_camera</span></a>
+            <a class="social-btn" href="#" aria-label="YouTube"><span class="material-icons">play_circle</span></a>
+            <a class="social-btn" href="#" aria-label="LinkedIn"><span class="material-icons">work</span></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Programs</h4>
+          <a href="courses.html">Technology & Dev</a>
+          <a href="courses.html">UI/UX Design</a>
+          <a href="courses.html">Fashion Tech</a>
+          <a href="courses.html">Civil Services</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Academy</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#faculty">Faculty & Mentors</a>
+          <a href="about.html#testimonials">Testimonials</a>
+          <a href="admissions.html#campuses">Campus Locations</a>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <a href="admissions.html">Admissions</a>
+          <a href="admissions.html#contact">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <span>© 2024 Ilakku Tech Skills Academy. All Rights Reserved.</span>
+        <span class="footer-tamil">இளகு தொழில்நுட்ப திறன் கல்விமனை</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 6.172c-3.203 0-5.807 2.604-5.807 5.807 0 1.277.414 2.453 1.114 3.414l-.73 2.661 2.723-.715a5.772 5.772 0 002.7 1.08h.001c3.203 0 5.807-2.604 5.807-5.807 0-3.203-2.604-5.807-5.807-5.807zm3.11 7.922c-.172.484-.87.892-1.22.95-.312.052-.716.096-1.127-.036-.254-.082-.572-.2-.976-.375-1.722-.746-2.85-2.493-2.936-2.607-.085-.114-.693-.923-.693-1.76 0-.837.427-1.25.58-.142.152-.108.254-.15.339-.1.085-.05.17-.1.255-.05.085-.102.17-.152.255-.17.426-.92 1.488-.95 1.547-.113.114-.227.126-.398.042-.17-.085-.722-.266-1.376-.849-.508-.452-.851-1.01-.951-1.18-.1-.17-.01-.262.076-.347.077-.076.17-.2.256-.298.085-.098.113-.17.17-.284.056-.114.028-.213-.014-.298-.043-.085-.386-.928-.529-1.273-.14-.336-.282-.29-.387-.294-.1-.002-.213-.002-.328-.002a.63.63 0 00-.457.213c-.157.17-.6.586-.6 1.43 0 .843.614 1.657.7 1.771.086.114 1.206 1.844 2.923 2.586.408.176.727.28.976.36.41.13.784.11 1.077.068.328-.047 1.013-.414 1.155-.812z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
